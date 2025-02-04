@@ -14,13 +14,18 @@ Compte::Compte(std::string nomCompteb, double soldeb, std::string lib, std::stri
 	mdp = mdpa;
 }
 
+std::string Compte::getCompte()
+{
+	return nomCompte;
+}
+
 std::string Compte::getMdp()
 {
 	return mdp;
 }
 
 std::string Compte::consulter(){
-	
+	return std::to_string(solde);
 }
 
 std::string Compte::getLibelle(){
@@ -54,7 +59,7 @@ void Compte::débiterFrais(double frais) {
 }
 
 double Compte::calculerAggios(double taux, double montantDecouvert, int jours){
-	
+	return 0;
 }
 
 void Compte::effectuerVirement(Compte& compteDest, double montant){

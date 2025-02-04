@@ -3,7 +3,7 @@
 #include <string>
 #include "Compte.h"
 
-void accueil(std::vector<Compte>& comptes);
-void creationCompte();
-void connexion(Compte& compte);
-void gestionnaireCompte();
+int accueil(std::vector<Compte>& comptes);
+void creationCompte(std::vector<Compte>& comptes);
+void connexion(std::vector<Compte>& comptes, Compte &compteUser);
+void gestionnaireCompte(std::vector<Compte>& comptes, Compte &compteUser);
